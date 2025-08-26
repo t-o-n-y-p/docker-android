@@ -16,7 +16,7 @@ services:
       - "/dev/kvm"
 
   android-2:
-    container_name: android-1
+    container_name: android-2
     image: budtmo/docker-android:emulator_12.0
     ports:
       - "6081:6080"
