@@ -8,9 +8,9 @@ services:
       - "6080:6080"
       - "4723:4723"
     environment:
-      EMULATOR_DEVICE: "Samsung Galaxy S10"
-      WEB_VNC: true
-      APPIUM: true
+      - EMULATOR_DEVICE="Samsung Galaxy S10"
+      - WEB_VNC=true
+      - APPIUM=true
     command:
       - "--device"
       - "/dev/kvm"
@@ -22,9 +22,9 @@ services:
       - "6081:6080"
       - "4724:4723"
     environment:
-      EMULATOR_DEVICE: "Nexus 5"
-      WEB_VNC: true
-      APPIUM: true
+      - EMULATOR_DEVICE="Nexus 5"
+      - WEB_VNC=true
+      - APPIUM=true
     command:
       - "--device"
       - "/dev/kvm"
