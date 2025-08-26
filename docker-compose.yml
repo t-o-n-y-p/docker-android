@@ -14,7 +14,7 @@ services:
       - DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
-      - APPIUM_ADDITIONAL_ARGS="--allow-cors"
+      - APPIUM_ADDITIONAL_ARGS="--allow-cors --address=127.0.0.1"
     devices:
       - "/dev/kvm"
 
@@ -31,7 +31,7 @@ services:
       - DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
-      - APPIUM_ADDITIONAL_ARGS="--allow-cors"
+      - APPIUM_ADDITIONAL_ARGS="--allow-cors --address=127.0.0.1"
     devices:
       - "/dev/kvm"
 
