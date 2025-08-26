@@ -16,7 +16,7 @@ services:
       - APPIUM=true
       - APPIUM_ADDITIONAL_ARGS="--allow-cors"
     devices:
-      - "/dev/kvm"
+      - "/dev/kvm:/dev/kvm"
 
   android-2:
     privileged: true
@@ -33,7 +33,7 @@ services:
       - APPIUM=true
       - APPIUM_ADDITIONAL_ARGS="--allow-cors"
     devices:
-      - "/dev/kvm"
+      - "/dev/kvm:/dev/kvm"
 
   wiremock:
     container_name: wiremock
