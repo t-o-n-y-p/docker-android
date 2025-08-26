@@ -30,5 +30,4 @@ bin/
 
 *.iml
 .idea/
-*.pem
-
+ssl/
