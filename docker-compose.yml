@@ -11,7 +11,7 @@ services:
       - "5555:5555"
       - "4723:4723"
     environment:
-      - EMULATOR_DEVICE="Samsung Galaxy S10"
+      - EMULATOR_DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
       - APPIUM_ADDITIONAL_ARGS="--allow-cors"
@@ -28,7 +28,7 @@ services:
       - "5557:5555"
       - "4724:4723"
     environment:
-      - EMULATOR_DEVICE="Nexus 5"
+      - EMULATOR_DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
       - APPIUM_ADDITIONAL_ARGS="--allow-cors"
