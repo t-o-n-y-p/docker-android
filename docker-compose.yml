@@ -15,8 +15,7 @@ services:
       - WEB_VNC=true
       - APPIUM=true
       - APPIUM_ADDITIONAL_ARGS="--allow-cors"
-    command:
-      - "--device"
+    devices:
       - "/dev/kvm"
 
   android-2:
@@ -33,8 +32,7 @@ services:
       - WEB_VNC=true
       - APPIUM=true
       - APPIUM_ADDITIONAL_ARGS="--allow-cors"
-    command:
-      - "--device"
+    devices:
       - "/dev/kvm"
 
   wiremock:
