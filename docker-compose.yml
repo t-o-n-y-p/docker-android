@@ -12,6 +12,7 @@ services:
       - WEB_VNC=true
       - APPIUM=true
     command:
+      - "--allow-cors"
       - "--device"
       - "/dev/kvm"
 
@@ -26,6 +27,7 @@ services:
       - WEB_VNC=true
       - APPIUM=true
     command:
+      - "--allow-cors"
       - "--device"
       - "/dev/kvm"
 
