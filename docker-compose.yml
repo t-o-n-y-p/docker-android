@@ -11,8 +11,8 @@ services:
       - EMULATOR_DEVICE="Samsung Galaxy S10"
       - WEB_VNC=true
       - APPIUM=true
+      - APPIUM_ADDITIONAL_ARGS="-allow-cors"
     command:
-      - "--allow-cors"
       - "--device"
       - "/dev/kvm"
 
@@ -26,8 +26,8 @@ services:
       - EMULATOR_DEVICE="Nexus 5"
       - WEB_VNC=true
       - APPIUM=true
+      - APPIUM_ADDITIONAL_ARGS="-allow-cors"
     command:
-      - "--allow-cors"
       - "--device"
       - "/dev/kvm"
 
