@@ -7,14 +7,12 @@ services:
     image: budtmo/docker-android:emulator_11.0
     ports:
       - "6080:6080"
-      - "5554:5554"
-      - "5555:5555"
       - "4723:4723"
     environment:
       - DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
-      - APPIUM_ADDITIONAL_ARGS="--allow-cors --address=94.126.205.185"
+      - APPIUM_ADDITIONAL_ARGS="--allow-cors"
     devices:
       - "/dev/kvm"
 
@@ -24,14 +22,12 @@ services:
     image: budtmo/docker-android:emulator_12.0
     ports:
       - "6081:6080"
-      - "5556:5554"
-      - "5557:5555"
       - "4724:4723"
     environment:
       - DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
-      - APPIUM_ADDITIONAL_ARGS="--allow-cors --address=94.126.205.185"
+      - APPIUM_ADDITIONAL_ARGS="--allow-cors"
     devices:
       - "/dev/kvm"
 
