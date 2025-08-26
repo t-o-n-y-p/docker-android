@@ -6,6 +6,8 @@ services:
     image: budtmo/docker-android:emulator_11.0
     ports:
       - "6080:6080"
+      - "5554:5554"
+      - "5555:5555"
       - "4723:4723"
     environment:
       - EMULATOR_DEVICE="Samsung Galaxy S10"
@@ -21,6 +23,8 @@ services:
     image: budtmo/docker-android:emulator_12.0
     ports:
       - "6081:6080"
+      - "5556:5554"
+      - "5557:5555"
       - "4724:4723"
     environment:
       - EMULATOR_DEVICE="Nexus 5"
