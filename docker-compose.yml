@@ -27,11 +27,8 @@ services:
       - DEVICE="Samsung Galaxy S6"
       - WEB_VNC=true
       - APPIUM=true
-      - APPIUM_ADDITIONAL_ARGS=--allow-cors --ssl-cert-path=/home/androidusr/ssl/cert.pem --ssl-key-path=/home/androidusr/ssl/key.pem
     devices:
       - "/dev/kvm"
-    volumes:
-      - ./ssl:/home/androidusr/ssl:ro
 
   wiremock:
     container_name: wiremock
